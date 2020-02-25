@@ -29,7 +29,7 @@ for file in $files; do
     cp $file $backup_dir"/"$basefile
 done
 
-tar -czf $zip_name".tar.gz" $backup_dir  &> /dev/null
+tar -zcf $zip_name".tar.gz" $backup_dir  &> /dev/null
 
 echo "done"
 
