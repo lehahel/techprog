@@ -3,11 +3,6 @@
 
 using namespace std;
 
-bool boolator_a() {
-    cout << "A" << endl;
-    return true;
-}
-
 bool boolator_c() {
     cout << "C" << endl;
     return true;
