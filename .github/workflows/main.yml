@@ -27,15 +27,15 @@ jobs:
       uses: akhtyamovpavel/ActionGtestReport@v0.0.9
       with:
         exec-path: bin/CTestExe
-        report-path: /home/runner/work/techprog/techprog/
-        working-directory: /home/runner/work/techprog/techprog/
-#     - name: UploadArtifacts
-#       uses: actions/upload-artifact@v1
-#       with:
-#         name: bin
-#         path: bin
-#       uses: actions/upload-artifact@v1
-#       with:
-#         name: bin
-#         path: bin
+#        report-path: /home/runner/work/techprog/techprog/
+#        working-directory: /home/runner/work/techprog/techprog/
+     - name: UploadArtifacts
+       uses: actions/upload-artifact@v1
+       with:
+         name: bin
+         path: bin
+       uses: actions/upload-artifact@v1
+       with:
+         name: bin
+         path: bin
 
