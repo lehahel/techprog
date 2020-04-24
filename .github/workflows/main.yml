@@ -29,10 +29,15 @@ jobs:
         exec-path: bin/CTestExe
         report-path: /home/runner/work/techprog/techprog/
         working-directory: /home/runner/work/techprog/techprog/
-    - name: UploadArtifacts
+    - name: UploadArtifactBin
       uses: actions/upload-artifact@v1
       with:
-        name: bin && lib
-        path: bin/ && lib/
+        name: bin
+        path: bin/
+    - name: UploadArtifactLib
+      uses: actions/upload-artifact@v1
+      with:
+        name: lib
+        path: lib/
 
 
