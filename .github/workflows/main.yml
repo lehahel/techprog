@@ -26,9 +26,9 @@ jobs:
     - name: Test
       uses: akhtyamovpavel/ActionGtestReport@v0.0.9
       with:
-        exec-path: /home/runner/work/techprog/techprog/exe
-        report-path: /home/runner/work/techprog/techprog
-        working-directory: /home/runner/work/techprog/techprog
+        exec-path: /home/runner/work/techprog/techprog/exe/bin/
+        report-path: /home/runner/work/techprog/techprog/
+        working-directory: /home/runner/work/techprog/techprog/
 
 
 #    # Runs a single command using the runners shell
