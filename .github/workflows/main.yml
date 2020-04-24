@@ -25,6 +25,10 @@ jobs:
       run: mkdir 3rdparty && git clone https://github.com/google/googletest.git 3rdparty && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX:PATH=/home/runner/work/techprog/techprog .. && make && make install
     - name: Test
       uses: akhtyamovpavel/ActionGtestReport@v0.0.9
+      with:
+        exec-path: /home/runner/work/techprog/techprog/exe
+        report-path: /home/runner/work/techprog/techprog
+        working-directory: /home/runner/work/techprog/techprog
 
 
 #    # Runs a single command using the runners shell
