@@ -32,11 +32,6 @@ jobs:
     - name: UploadArtifacts
       uses: actions/upload-artifact@v1
       with:
-        name: bin
-        path: bin/
-      uses: actions/upload-artifact@v1
-       with:
-         name: lib
-         path: lib/
-
+        name: bin lib
+        path: bin/ lib/
 
