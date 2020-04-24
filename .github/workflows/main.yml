@@ -23,8 +23,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build
       run: mkdir 3rdparty && git clone https://github.com/google/googletest.git 3rdparty && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX:PATH=/home/runner/work/techprog/techprog .. && make && make install
-    - uses: akhtyamovpavel/ActionGtestReport@v0.0.9
     - name: Test
+        uses: akhtyamovpavel/ActionGtestReport@v0.0.9
+        with:
+            who-to-greet: 'Mona the Octocat'
 
 
 #    # Runs a single command using the runners shell
