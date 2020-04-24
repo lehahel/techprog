@@ -30,9 +30,13 @@ jobs:
         report-path: /home/runner/work/techprog/techprog/
         working-directory: /home/runner/work/techprog/techprog/
 
+     - name: UploadArtifacts
+       uses: actions/upload-artifact@v1
+       with:
+         name: bin
+         path: bin
+       uses: actions/upload-artifact@v1
+       with:
+         name: bin
+         path: bin
 
-#    # Runs a single command using the runners shell
-#    - name: Run a one-line script
-#      uses: akhtyamovpavel/ActionGtestReport@v0.0.1
-#      with:
-#        who-to-greet: 'Mona the Octocat'
