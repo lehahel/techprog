@@ -33,6 +33,10 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: bin
-        path: /home/runner/work/techprog/techprog/exe/bin/
+        path: bin/
+      uses: actions/upload-artifact@v1
+       with:
+         name: lib
+         path: lib/
 
 
