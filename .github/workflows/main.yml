@@ -22,7 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: Build
-      run: mkdir 3rdparty && git clone https://github.com/google/googletest.git 3rdparty && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr .. && make && make install
+      run: mkdir 3rdparty && git clone https://github.com/google/googletest.git 3rdparty && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX:PATH=/~/task4 .. && make && make install
 
 #    # Runs a single command using the runners shell
 #    - name: Run a one-line script
