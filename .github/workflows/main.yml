@@ -29,10 +29,10 @@ jobs:
         exec-path: bin/CTestExe
         report-path: report.xml
         working-directory: task4/
-    - name: UploadArtifactBin
+    - name: UploadArtifacts
       uses: actions/upload-artifact@v1
       with:
-        name: Artifact
+        name: Distributive
         path: task4/build/exe_files/exe
 
 
