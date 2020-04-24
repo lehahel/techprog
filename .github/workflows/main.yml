@@ -29,7 +29,6 @@ jobs:
         exec-path: bin/CTestExe
         report-path: /home/runner/work/techprog/techprog/
         working-directory: /home/runner/work/techprog/techprog/
-
      - name: UploadArtifacts
        uses: actions/upload-artifact@v1
        with:
